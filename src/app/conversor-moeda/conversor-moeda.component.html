@@ -1,0 +1,24 @@
+<div class="diplay-5 mt-4">
+    <h5>Valor Em Reais:</h5>    
+</div>
+<input [(ngModel)]="reais" style="width: 200px; text-align: center; border-radius: 15px;" (change)="calcular()" >
+<div class="diplay-5 mt-2">
+    <h5>Valor Do Dólar:</h5>    
+</div>
+<input [(ngModel)]="dolar" style="width: 200px; text-align: center; border-radius: 15px;" (change)="calcular()">
+<div class="diplay-5 mt-2">
+    <h5>Valor Da Libra:</h5>    
+</div>
+<input [(ngModel)]="euro" style="width: 200px; text-align: center; border-radius: 15px;" (change)="calcular()">
+<div class="diplay-5 mt-2">
+    <h5>Valor Do Euro:</h5>    
+</div>
+<input [(ngModel)]="libra" style="width: 200px; text-align: center; border-radius: 15px;" (change)="calcular()">
+
+
+<br><br>
+
+    <button class="btn btn-warning mt-2" style="width: 200px;">O Valor R$: {{this.reais}}</button><br>
+    <button class="btn btn-success mt-2" style="width: 200px;">Em Dólares USD$: {{this.result[1]}}</button><br>
+    <button class="btn btn-success mt-2" style="width: 200px;">Em Euros EUR$: {{this.result[2]}}</button><br>
+    <button class="btn btn-success mt-2" style="width: 200px;">Em Libras GBP$: {{this.result[3]}}</button>
